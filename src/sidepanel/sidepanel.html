@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>max</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="toast-container" id="toastContainer"></div>
+
+  <div class="toolbar">
+    <span class="logo">markdown to x. lets call him max</span>
+  </div>
+
+  <div class="editor-container" id="editorContainer">
+    <textarea class="editor-textarea" id="editorTextarea" placeholder="Write Markdown here..." spellcheck="true"></textarea>
+  </div>
+
+  <div class="media-tray" id="mediaTray">
+    <div class="media-thumbnails" id="mediaThumbnails"></div>
+    <button class="media-add-btn" id="mediaAddBtn" title="Add header image">+ Header image</button>
+    <input type="file" id="mediaFileInput" accept="image/*" hidden>
+  </div>
+
+  <div class="action-bar">
+    <button class="sync-btn" id="syncBtn">Sync to X</button>
+    <span class="sync-info" id="syncInfo"><span id="wordCount">0 words</span></span>
+  </div>
+
+  <script src="../lib/marked.min.js"></script>
+  <script src="../lib/x-renderer.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
